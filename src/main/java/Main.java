@@ -1,13 +1,15 @@
 import com.google.gson.Gson;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
+import org.junit.Test;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Main {
 
-        //Test
+        @Test
         public void testFunc() {
             Gson gson = new Gson();
             RequestSpecification request = RestAssured.given();
